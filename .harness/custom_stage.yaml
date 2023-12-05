@@ -1,0 +1,22 @@
+pipeline:
+  name: custom stage
+  identifier: custom_stage
+  projectIdentifier: Arunav
+  orgIdentifier: SE_Sandbox
+  tags: {}
+  stages:
+    - stage:
+        name: test
+        identifier: test
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: Wait
+                  name: Wait_1
+                  identifier: Wait_1
+                  spec:
+                    duration: 10m
+        tags: {}
